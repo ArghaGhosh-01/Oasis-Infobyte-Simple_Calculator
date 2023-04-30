@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Calculator</title>
+</head>
+<link rel="stylesheet" href="cal.css">
+
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="result" readonly>
+        </div>
+        <div class="keypad">
+            <button class="some" onclick="clearResult()">C</button>
+            <button class="some" onclick="backspace()">⌫</button>
+            <button class="some" onclick="addToResult('/')">÷</button>
+            <button class="some" onclick="addToResult('*')">x</button>
+            <button onclick="addToResult('7')">7</button>
+            <button onclick="addToResult('8')">8</button>
+            <button onclick="addToResult('9')">9</button>
+            <button class="some" onclick="addToResult('-')">-</button>
+            <button onclick="addToResult('4')">4</button>
+            <button onclick="addToResult('5')">5</button>
+            <button onclick="addToResult('6')">6</button>
+            <button class="some" onclick="addToResult('+')">+</button>
+            <button onclick="addToResult('1')">1</button>
+            <button onclick="addToResult('2')">2</button>
+            <button onclick="addToResult('3')">3</button>
+            <button id="eq" onclick="calculate()">=</button>
+            <button id="o" onclick="addToResult('0')">0</button>
+            <button onclick="addToResult('.')">.</button>
+        </div>
+    </div>
+
+</body>
+<script src="cal.js"></script>
+
+</html>
